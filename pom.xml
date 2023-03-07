@@ -11,7 +11,7 @@
 
 	<groupId>com.mastior</groupId>
 	<artifactId>scm-test</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.2</version>
 	<name>scm-test</name>
 	<description>Demo project for Spring Boot</description>
 
@@ -23,7 +23,7 @@
 	<scm>
 		<developerConnection>scm:git:https://github.com/matsior/scm-test.git</developerConnection>
 		<connection>scm:git:https://github.com/matsior/scm-test.git</connection>
-	  <tag>HEAD</tag>
+	  <tag>scm-test-0.0.2</tag>
   </scm>
 
 	<distributionManagement>
