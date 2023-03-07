@@ -6,7 +6,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.7.9</version>
-		<relativePath /> <!-- lookup parent from repository -->
+		<relativePath>../scm-test/pom.xml</relativePath> <!-- lookup parent from repository -->
 	</parent>
 
 	<groupId>com.mastior</groupId>
@@ -63,6 +63,14 @@
 				<version>2.5.3</version>
 			</plugin>
 		</plugins>
+
+		<extensions>
+			<extension>
+				<groupId>io.packagecloud.maven.wagon</groupId>
+				<artifactId>maven-packagecloud-wagon</artifactId>
+				<version>0.0.6</version>
+			</extension>
+		</extensions>
 	</build>
 
 </project>
