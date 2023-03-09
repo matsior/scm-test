@@ -12,6 +12,8 @@ jobs:
       - run:
           name: Test
           command: mvn test
+      - run: git config user.email "maatsior@gmail.com"
+      - run: git config user.name "Via Circleci"
       - run:
           name: Release
           command: mvn --batch-mode release:prepare release:perform -s .circleci/settings.xml

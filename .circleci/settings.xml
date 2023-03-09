@@ -13,5 +13,11 @@
       <id>packagecloud.snapshot</id>
       <password>${env.PACKAGE_CLOUD}</password>
     </server>
+
+    <server>
+      <id>github</id>
+      <username>matsior</username>
+      <password>${env.GITHUB_PWD}</password>
+    </server>
   </servers>
 </settings>
