@@ -11,7 +11,7 @@
 
 	<groupId>com.mastior</groupId>
 	<artifactId>scm-test</artifactId>
-	<version>0.0.3-SNAPSHOT</version>
+	<version>1.0-SNAPSHOT</version>
 	<name>scm-test</name>
 	<description>Demo project for Spring Boot</description>
 

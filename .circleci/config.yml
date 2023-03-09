@@ -1,7 +1,7 @@
 version: 2.1
 
 jobs:
-  build-and-deploy:
+  build-and-release:
     docker:
       - image: cimg/openjdk:17.0.6
     steps:
@@ -13,10 +13,10 @@ jobs:
           name: Test
           command: mvn test
       - run:
-          name: Deploy
-          command: mvn deploy -s .circleci/settings.xml
+          name: Release
+          command: mvn --batch-mode release:prepare release:perform -s .circleci/settings.xml
 
 workflows:
   sample:
     jobs:
-      - build-and-deploy
+      - build-and-release
